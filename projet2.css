@@ -3,6 +3,7 @@
 }
 header
 {
+    margin-left: 10px;
     display: flex;
     flex-direction: row;
     align-content: flex-start;
@@ -14,8 +15,9 @@ display: flex;
 }
 #nav
 {
+    display: flex;
     margin-top: 10px;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
 }
 .nav1  /* bouton Hebergement 1*/
 {   
@@ -25,13 +27,10 @@ display: flex;
 }
 .nav1:hover    /* Mouseover du bouton 1*/
 {
-    border-left-style: none;
-    border-right-style: none; 
-    border-bottom-style: none;
     border-top-style: solid;
-    border-width: 1px;
-    padding-top: 15px;
-    color: #0064fa;
+    border-width: 2px;
+    padding-top: 16px;
+    color: #0065FC;
 }
 .nav2 /* bouton Activités 2*/
 {   
@@ -42,13 +41,10 @@ display: flex;
 }
 .nav2:hover /* Mouseover du bouton 2 */
 {
-    border-left-style: none;
-    border-right-style: none; 
-    border-bottom-style: none;
     border-top-style: solid;
-    border-width: 1px;
-    padding-top: 15px;
-    color: #0064fa;
+    border-width: 2px;
+    padding-top: 16px;
+    color: #0065FC;
 }
 .nav3
 {   
@@ -59,11 +55,35 @@ display: flex;
 }
 h1
 {
-    font-size: 16px;
+    font-size: 14px;
 }
 h2
 {
-    font-size: 14px;
+    font-size: 12px;
+}
+#searchbar
+{
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: #F2F2F2;
+    width: 290px;
+    min-width: 290px;
+}
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    padding-left: 5px;
+    border: 2px #F2F2F2 solid ; 
+    border-radius: 20px; 
+}
+#button
+{
+    color: white;
+    background: #0065FC;
+}
+section
+{
+    margin-left: 30px;
 }
 ol
 {
