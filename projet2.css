@@ -1,0 +1,20 @@
+* {
+	font-family: 'Raleway', sans-serif;
+}
+#inscription
+{
+    color: #0065FC;
+    font-size: 16px;
+}
+h1
+{
+    font-size: 18px;
+}
+h2
+{
+    font-size: 16px;
+}
+ol
+{
+    list-style-type: none;
+}

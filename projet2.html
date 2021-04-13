@@ -4,12 +4,19 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="projet2.css" />
         <script src="https://kit.fontawesome.com/da3c75c786.js" crossorigin="anonymous"></script>  <!-- Kit Code front awesome -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!--Police-->
         <title>RESERVIA</title>
     </head>
     <header>
-        <div> <a href="projet2.html" title="Reservia"><img src="images/logo/Reservia.svg" alt="Logo"/> </a></div>
+        <div> <a href="projet2.html"><img src="images/logo/Reservia.svg" alt="Logo"/> </a> <!--Titre du site-->
+                <a class="nav" href="#Hébergements">Hébergements</a> <!--nav avec ancrage-->
+                <a class="nav" href="#Activités">Activités</a> 
+                <a id="inscription"><strong>S'inscrire</strong></a> 
+        </div>
         <div>
-            <h1><strong> votre hébergement pour des vacances de rêve </strong></h1>
+            <h1><strong> Votre hébergement pour des vacances de rêve </strong></h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
         <div> <i class="fas fa-map-marker-alt">
@@ -18,6 +25,35 @@
       </div>
     </header>
     <body>
+        <section>
+            <h1 id="Hébergements"> Hébergement à Marseille </h1>
+        </section>
+        <section>
+            <h1 id="Activités"> Activités à Marseille </h1>
+        </section>
     </body>
-    <footer></footer>
+    <footer> <!--Liste à puce du bas de page-->
+        <div>
+            <div>
+            <h2>A propos</h2>
+            <ol>
+                <li>Fonctinnement du site</li>
+                <li>Conditions générales de vente</li>
+                <li>Données et confidentialité</li>
+            </ol>
+        </div>
+        <div>
+            <h2>Nos hébergements</h2>
+            <ol>
+                <li>Charte qualité</li>
+                <li>Soumettre votre hôtel</li>
+        </div>
+        <div>
+            <h2>Assistance</h2>
+            <ol>
+                <li>Centre d'aide</li>
+                <li>Nous contacter</li>
+        </div>
+    </div>
+    </footer>
 </html>
