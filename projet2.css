@@ -55,31 +55,55 @@ display: flex;
 }
 h1
 {
-    font-size: 14px;
+    font-size: 18px;
 }
 h2
 {
-    font-size: 12px;
+    font-size: 16px;
 }
-#searchbar
-{
-    border: 2px solid;
-    border-radius: 20px;
-    border-color: #F2F2F2;
-    width: 290px;
-    min-width: 290px;
+.searchbar {                                               /* Groupe de la barre de recherche */
+    display: flex;
+    flex-direction: row;
+    background: #F2F2F2;
+    overflow: hidden;
+    width: 380px;
+    height: 50px;
+    margin-top: 30px;
+    border: 2px rgba(128, 128, 128, 0.103) solid;
+    border-radius: 10px 10px 10px 10px;
+  }
+.fa-map-marker-alt {                                       /* Icone "localisation" de la barre de recherche */
+    background-color:rgba(128, 128, 128, 0.103);
+    font-size: 1.3rem;
+    padding: 15px;
+    border: 2px rgba(128, 128, 128, 0) solid;
+    border-radius: 8px 0px 0px 8px;
 }
-.fa-map-marker-alt
-{
+input {                                                    /* Barre de recherche */
     background-color: #F2F2F2;
-    padding-left: 5px;
-    border: 2px #F2F2F2 solid ; 
-    border-radius: 20px; 
+    padding: 16px 15px;
+    display: block;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    transition: all 240ms ease-out;
+    width: 85%;
+    border: none;
 }
-#button
-{
-    color: white;
-    background: #0065FC;
+input:focus {
+    outline: none;
+}
+button {                                                     /* Bouton "rechercher" */
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color:#0065FC;
+    padding: 16px 32px;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: #F2F2F2;
+    margin-bottom: 15px;
 }
 section
 {
