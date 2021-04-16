@@ -1,42 +1,93 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="projet2.css" />
-        <script src="https://kit.fontawesome.com/da3c75c786.js" crossorigin="anonymous"></script>  <!-- Kit Code front awesome -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!--Police-->
-        <title>RESERVIA</title>
-    </head>
-    <header>
-            <div> <a class="title" href="projet2.html"><img src="images/logo/Reservia.svg" alt="Logo"/> </a> </div> <!--Titre du site-->
-               <div id="nav"> 
-                   <a class="nav1" href="#Hébergements">Hébergements</a>  <!--nav avec ancrage-->
-                    <a class="nav2" href="#Activités">Activités</a> 
-                    <a class="nav3" href=""> <strong>S'inscrire</strong></a> 
-                </div>
-        </header>
-        <body>
-            <h1><strong> Votre hébergement pour des vacances de rêve </strong></h1>
-            <p>En plein centre ville ou en pleine nature</p>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="projet2.css" />
+    <script src="https://kit.fontawesome.com/da3c75c786.js" crossorigin="anonymous"></script>
+    <!-- Kit Code front awesome -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <!--Police-->
+    <title>RESERVIA</title>
+</head>
+<header>
+    <div> <a class="title" href="projet2.html"><img src="images/logo/Reservia.svg" alt="Logo" /> </a> </div>
+    <!--Titre du site-->
+    <div id="nav">
+        <div> <a class="nav1" href="#Hebergements">Hébergements</a> </div>
+        <!--nav avec ancrage-->
+        <div> <a class="nav2" href="#Activites">Activités</a> </div>
+        <div> <a class="nav3" href=""> <strong>S'inscrire</strong></a> </div>
+    </div>
+</header>
+
+<body>
+    <section>
+        <h1><strong> Votre hébergement pour des vacances de rêve </strong></h1>
+        <p>En plein centre ville ou en pleine nature</p>
         </div>
-        <div> <i class="fas fa-map-marker-alt">
-              </i> <input type="search" id="site-search" name="q" aria-label="Search through site content"> 
-              <button>Rechercher</button> <!--Barre de Recherche-->
-      </div>
-        <section>
-            <h1 id="Hébergements"> Hébergement à Marseille </h1>
-        </section>
-        <section>
-            <h1 id="Activités"> Activités à Marseille </h1>
-        </section>
-    </body>
-    <footer> <!--Liste à puce du bas de page-->
-        <div id="footerlist">
-            <div>
+        <div class="searchbar">
+            <!-- Barre de recherche -->
+            <span class="fas fa-map-marker-alt fa-fw"></span> <!-- Icone de localisation -->
+            <div class="InputContainer">
+                <!-- input Container -->
+                <input placeholder="Marseille, France" />
+            </div>
+            <div class="rechercher">
+                <!-- Bouton "rechercher" -->
+                <button>Rechercher</button>
+            </div>
+    </section>
+    <section>
+        <div id="filtres">
+            <h2> <strong> Filtres </strong> </h2>
+            <div class="boutonfiltres">
+                <span>
+                    <i class="fas fa-money-bill-wave"></i>
+                </span>
+                <h2><strong> Économique </strong></h2>
+            </div>
+            <div class="boutonfiltres">
+                <span>
+                    <i class="fas fa-child"></i>
+                </span>
+                <h2><strong> Familial </strong></h2>
+            </div>
+            <div class="boutonfiltres">
+                <span>
+                    <i class="fas fa-heart"></i>
+                </span>
+                <h2><strong> Romantique </strong></h2>
+            </div>
+            <div class="boutonfiltres">
+                <span>
+                    <i class="fas fa-dog"></i>
+                </span>
+                <h2><strong> Animaux autorisés </strong></h2>
+            </div>
+        </div>
+        <div id="info">
+            <span>
+                <i class="fas fa-info"></i>
+            </span>
+          <p>Plus de 500 logements sont disponibles dans cette ville</p>  
+        </div>
+    </section>
+    <section>
+        <h1 id="Hebergements"> Hébergement à Marseille </h1>
+    </section>
+    <section>
+        <h1 id="Activites"> Activités à Marseille </h1>
+    </section>
+</body>
+<footer>
+    <!--Liste à puce du bas de page-->
+    <div id="footerlist">
+        <div>
             <ol>
                 <h2>A propos</h2>
-                <li>Fonctinnement du site</li>
+                <li>Fonctionnement du site</li>
                 <li>Conditions générales de vente</li>
                 <li>Données et confidentialité</li>
             </ol>
@@ -55,5 +106,6 @@
                 <li>Nous contacter</li>
         </div>
     </div>
-    </footer>
+</footer>
+
 </html>
