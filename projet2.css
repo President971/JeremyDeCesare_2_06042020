@@ -1,126 +1,161 @@
 * {
-	font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
-header
-{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    justify-content: space-between; 
+header {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
 }
-.title
-{
-display: flex; 
+.title {
+  display: flex;
 }
-#nav
-{
-    display: flex;
-    margin-top: 10px; 
+#nav {
+  display: flex;
+  margin-top: 10px;
 }
-.nav1  /* bouton Hebergement 1*/ 
-{   
-    text-decoration: none;
-    color: black;
-    font-size: 16px;    
+.nav1  /* bouton Hebergement 1*/ {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
 }
-.nav1:hover    /* Mouseover du bouton 1*/
-{
-    border-top-style: solid;
-    border-width: 2px;
-    padding-top: 16px;
-    color: #0065FC;
+.nav1:hover    /* Mouseover du bouton 1*/ {
+  border-top-style: solid;
+  border-width: 2px;
+  padding-top: 16px;
+  color: #0065fc;
 }
-.nav2 /* bouton Activités 2*/
-{   
-    text-decoration: none;
-    color: black;
-    font-size: 16px;
-    margin: 20px;
+.nav2 /* bouton Activités 2*/ {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  margin: 20px;
 }
-.nav2:hover /* Mouseover du bouton 2 */
-{
-    border-top-style: solid;
-    border-width: 2px;
-    padding-top: 16px;
-    color: #0065FC;
+.nav2:hover /* Mouseover du bouton 2 */ {
+  border-top-style: solid;
+  border-width: 2px;
+  padding-top: 16px;
+  color: #0065fc;
 }
-.nav3
-{   
-    text-decoration: none;
-    color: #0065FC;
-    font-size: 16px;
-    margin-right: 10px;
+.nav3 {
+  /* Bouton s'inscrire */
+  text-decoration: none;
+  color: #0065fc;
+  font-size: 16px;
+  margin-right: 10px;
 }
-h1
-{
-    font-size: 18px;
+h1 {
+  font-size: x-large;
 }
-h2
-{
-    font-size: 16px;
+h2 {
+  font-size: medium;
 }
-.searchbar {                                               /* Groupe de la barre de recherche */
-    display: flex;
-    flex-direction: row;
-    background: #F2F2F2;
-    overflow: hidden;
-    width: 380px;
-    height: 50px;
-    margin-top: 30px;
-    border: 2px rgba(128, 128, 128, 0.103) solid;
-    border-radius: 10px 10px 10px 10px;
-  }
-.fa-map-marker-alt {                                       /* Icone "localisation" de la barre de recherche */
-    background-color:rgba(128, 128, 128, 0.103);
-    font-size: 1.3rem;
-    padding: 15px;
-    border: 2px rgba(128, 128, 128, 0) solid;
-    border-radius: 8px 0px 0px 8px;
+.searchbar {
+  /* Groupe de la barre de recherche */
+  display: flex;
+  flex-direction: row;
+  background: #f2f2f2;
+  overflow: hidden;
+  width: 380px;
+  height: 50px;
+  margin-top: 30px;
+  border: 2px #8080801a solid;
+  border-radius: 10px 10px 10px 10px;
 }
-input {                                                    /* Barre de recherche */
-    background-color: #F2F2F2;
-    padding: 16px 15px;
-    display: block;
-    font-weight: bold;
-    font-size: 16px;
-    color: black;
-    transition: all 240ms ease-out;
-    width: 85%;
-    border: none;
+.fa-map-marker-alt {
+  /* Icone "localisation" de la barre de recherche */
+  background-color: #8080801a;
+  font-size: 1.3rem;
+  padding: 15px;
+  border: 2px #80808000 solid;
+  border-radius: 8px 0px 0px 8px;
+}
+input {
+  /* Barre de recherche */
+  background-color: #f2f2f2;
+  padding: 16px 15px;
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  transition: all 240ms ease-out;
+  width: 85%;
+  border: none;
 }
 input:focus {
-    outline: none;
+  outline: none;
 }
-button {                                                     /* Bouton "rechercher" */
-    cursor: pointer;
-    outline: none;
-    border: none;
-    background-color:#0065FC;
-    padding: 16px 32px;
-    border-radius: 0px 8px 8px 0px;
-    font-size: 1rem;
-    font-weight: bolder;
-    color: #F2F2F2;
-    margin-bottom: 15px;
+button {
+  /* Bouton "rechercher" */
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: #0065fc;
+  padding: 16px 32px;
+  border-radius: 0px 8px 8px 0px;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: #f2f2f2;
+  margin-bottom: 15px;
 }
-section
-{
-    margin-left: 30px;
+#filtres {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-bottom: 20px;
 }
-ol
-{
-    list-style-type: none;
+.fa-money-bill-wave,
+.fa-heart,
+.fa-child,
+.fa-dog {
+  /* Icones Filtres */
+  font-size: 100%;
+  border-radius: 25px 25px 25px 25px;
+  color: #0065fc;
+  padding: 15px;
+  margin-right: 10px;
+  background-color: #deebff;
 }
-footer
-{
-    background-color: #F2F2F2;
+.boutonfiltres {
+  /* bouton complet filtres */
+  display: flex;
+  border: 2px #f2f2f2 solid;
+  border-radius: 25px 25px 25px 25px;
+  border-left: none;
+  margin-left: 15px;
+  padding-right: 15px;
+}
+#info {
+  display: flex;
+}
+.fa-info {
+  /* Icone Info */
+  display: flex;
+  font-size: 100%;
+  border-radius: 50%;
+  color: #0065fc;
+  border: 2px #f2f2f2 solid;
+  padding: 5px;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+section {
+  margin-left: 30px;
+}
+ol {
+  list-style-type: none;
+}
+footer {
+  background-color: #f2f2f2;
 }
 
-#footerlist
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    
+#footerlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
