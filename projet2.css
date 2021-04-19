@@ -2,7 +2,6 @@
   font-family: "Raleway", sans-serif;
 }
 header {
-  margin-left: 20px;
   display: flex;
   flex-direction: row;
   align-content: flex-start;
@@ -123,7 +122,7 @@ button {
 }
 .fa-money-bill-wave {
   padding-left: 13px;
-  padding-right: 13px; 
+  padding-right: 13px;
 }
 .boutonfiltres {
   /* bouton complet filtres */
@@ -156,8 +155,55 @@ button {
   margin-top: 10px;
   margin-right: 15px;
 }
-section {
-  margin-left: 30px;
+#heb {
+  /*Section Hebergement+Aside*/
+  display: flex;
+  flex-direction: row;
+}
+.hebsection {
+  /* Hebergement*/
+  background-color: #f2f2f2;
+  margin-right: 5%;
+  max-width: 65%;
+  border-radius: 20px;
+}
+#agencevignette {
+  /* agencements vignettes*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 40px;
+}
+#vignettesheb {
+  /* reglagles vignettes*/
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 200px;
+  width: 246px;
+  border-radius: 10px;
+  margin: 30px;
+}
+.imgheb {
+  /* Reglages images dans la vignettes */
+  padding-top: 4px;
+  padding-left: 4px;
+  padding-right: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 114px;
+  width: 236px;
+}
+.textheb { /* Text Vignettes Hbergements */
+  margin-left: 16px;
+  font-size: small;
+  margin-bottom: 100px;
+}
+.hebaside { /*Aside*/
+  background-color: #f2f2f2;
+  max-width: 30%;
+  margin-right: 5%;
 }
 ol {
   list-style-type: none;
@@ -170,4 +216,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+}
+html {
+  margin-left: 10%;
+  margin-right: 10%;
 }
