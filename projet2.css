@@ -6,13 +6,15 @@ header {
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
+  padding-left: 5%;
 }
 .title {
   display: flex;
 }
 #nav {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
+  padding-right: 3%;
 }
 .nav1  /* bouton Hebergement 1*/ {
   text-decoration: none;
@@ -22,7 +24,7 @@ header {
 .nav1:hover    /* Mouseover du bouton 1*/ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 16px;
+  padding-top: 26px;
   color: #0065fc;
 }
 .nav2 /* bouton Activités 2*/ {
@@ -34,7 +36,7 @@ header {
 .nav2:hover /* Mouseover du bouton 2 */ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 16px;
+  padding-top: 26px;
   color: #0065fc;
 }
 .nav3 {
@@ -42,7 +44,7 @@ header {
   text-decoration: none;
   color: #0065fc;
   font-size: 16px;
-  margin-right: 10px;
+  margin-right: 50px;
 }
 h1 {
   font-size: x-large;
@@ -101,8 +103,8 @@ button {
 #filtres {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 3%;
+  margin-bottom: 2%;
 }
 .fa-money-bill-wave,
 .fa-heart,
@@ -113,7 +115,7 @@ button {
   border-radius: 25px 25px 25px 25px;
   color: #0065fc;
   padding: 15px;
-  margin-right: 10px;
+  margin-right: 20px;
   background-color: #deebff;
 }
 .fa-child {
@@ -159,23 +161,27 @@ button {
   /*Section Hebergement+Aside*/
   display: flex;
   flex-direction: row;
+  margin-top: 2%;
 }
 .hebsection {
   /* Hebergement*/
   background-color: #f2f2f2;
-  margin-right: 5%;
-  max-width: 65%;
+  min-width: 30%;
+  max-height: 30%;
   border-radius: 20px;
+  margin-right: 5%;
 }
 #agencevignette {
-  /* agencements vignettes*/
+  /* agencements vignettes hebergement*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 40px;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
 }
 #vignettesheb {
-  /* reglagles vignettes*/
+  /* reglagles vignettes hebergement*/
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -183,30 +189,114 @@ button {
   height: 200px;
   width: 246px;
   border-radius: 10px;
-  margin: 30px;
+  margin: 14px;
 }
 .imgheb {
   /* Reglages images dans la vignettes */
   padding-top: 4px;
-  padding-left: 4px;
-  padding-right: 2px;
+  padding-left: 5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 114px;
   width: 236px;
 }
-.textheb { /* Text Vignettes Hbergements */
+.titreheb {
+  /*titre hebergement*/
+  padding-left: 35px;
+  padding-top: 2%;
+}
+.titreaff {
+  /* titre afficher*/
+  padding-left: 35px;
+}
+.textheb {
+  /* Text Vignettes Hebergements */
+  display: flex;
+  flex-direction: column;
   margin-left: 16px;
   font-size: small;
-  margin-bottom: 100px;
 }
-.hebaside { /*Aside*/
+.agencestar {
+  /*agencement etoile*/
+  display: flex;
+  flex-direction: row;
+}
+.star {
+  color: #0065fc;
+}
+.stargris {
+  margin-left: 3px;
+  color: #f2f2f2;
+}
+.hebaside {
+  /*Aside*/
   background-color: #f2f2f2;
   max-width: 30%;
-  margin-right: 5%;
+  border-radius: 20px;
+}
+#agencevignetteaside {
+  /* agencements vignettes aside*/
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 34px;
+}
+#vignettesaside {
+  /* reglagles vignettes aside*/
+  background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 144px;
+  width: 343px;
+  border-radius: 10px;
+  margin: 14px;
+}
+.imgaside {
+  /* Reglages images dans la vignettes */
+  padding-top: 5px;
+  padding-left: 5px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 134px;
+  width: 128px;
+}
+.agencetitreaside {
+  /*agencement titre et icone */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.titreaside {
+  /*titre aside*/
+  padding-left: 12%;
+  padding-top: 2%;
+}
+.fa-chart-line {
+  /* icone aside*/
+  font-size: 1.33em;
+  vertical-align: -25%;
+  padding-top: 5%;
+  padding-right: 12%;
+}
+.textaside {
+  /* Text Vignettes Aside */
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  font-size: small;
+  padding-top: 5%;
+  justify-content: space-between;
+  padding-bottom: 5%;
 }
 ol {
   list-style-type: none;
+}
+section {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 footer {
   background-color: #f2f2f2;
@@ -216,8 +306,4 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-}
-html {
-  margin-left: 10%;
-  margin-right: 10%;
 }
