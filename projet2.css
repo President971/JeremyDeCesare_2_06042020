@@ -6,7 +6,7 @@ header {
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
-  padding-left: 5%;
+  margin-left: 10%;
 }
 .title {
   display: flex;
@@ -238,7 +238,6 @@ button {
   /* agencements vignettes aside*/
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 34px;
@@ -291,12 +290,96 @@ button {
   justify-content: space-between;
   padding-bottom: 5%;
 }
+#act {
+  /*Section Activités*/
+  display: flex;
+  flex-direction: row;
+  margin-top: 2%;
+}
+.actsection {
+  /*activités*/
+  display: flex;
+  flex-direction: row;
+  min-width: 30%;
+  max-height: 30%;
+  border-radius: 20px;
+}
+#actvignette {
+  /* agencements vignettes activités*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+#actvignetteright {
+  /* agencements vignettes activités droite*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+  padding-top: 8%;
+}
+#vignettesact {
+  /* reglagles vignettes hebergement*/
+  background-color: #070707e1;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 200px;
+  width: 246px;
+  border-radius: 10px;
+  margin: 14px;
+}
+#vignettesactbig {
+  /* reglagles vignettes activités Big*/
+  background-color: #ffffff;
+  height: 446px;
+  width: 308px;
+  border-radius: 10px;
+  margin: 14px;
+  box-shadow: 6px 6px 4px #f2f2f2;
+}
+.imgact {
+  /* Reglages images dans la vignettes */
+  padding-top: 4px;
+  padding-left: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 114px;
+  width: 236px;
+}
+.imgactbig {
+  /* Reglages image dans la vignette BIG */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 390px;
+  width: 308px;
+}
+.titreact {
+  /*titre activités*/
+  padding-left: 35px;
+  padding-top: 2%;
+}
+.textact {
+  /* Texte Vignettes Activités */
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  font-size: small;
+}
+.textactbig {
+  /* Texte Vignettes Activités Big */
+  font-size: medium;
+  padding-left: 5%;
+  padding-top: 4%;
+}
 ol {
   list-style-type: none;
 }
 section {
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 footer {
   background-color: #f2f2f2;
