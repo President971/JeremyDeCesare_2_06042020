@@ -23,67 +23,69 @@
 </header>
 
 <body>
-    <section>
-        <h1><strong> Votre hébergement pour des vacances de rêve </strong></h1>
-        <p>En plein centre ville ou en pleine nature</p>
-        </div>
-        <div class="searchbar">
-            <!-- Barre de recherche -->
-            <span class="fas fa-map-marker-alt fa-fw"></span> <!-- Icone de localisation -->
-            <div class="InputContainer">
-                <!-- input Container -->
-                <input placeholder="Marseille, France" />
+    <section class="section1">
+        <section>
+            <h1><strong> Votre hébergement pour des vacances de rêve </strong></h1>
+            <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <div class="rechercher">
-                <!-- Bouton "rechercher" -->
-                <button>Rechercher</button>
+            <div class="searchbar">
+                <!-- Barre de recherche -->
+                <span class="fas fa-map-marker-alt fa-fw"></span> <!-- Icone de localisation -->
+                <div class="InputContainer">
+                    <!-- input Container -->
+                    <input placeholder="Marseille, France" />
+                </div>
+                <div class="rechercher">
+                    <!-- Bouton "rechercher" -->
+                    <button>Rechercher</button>
+                </div>
+        </section>
+        <section>
+            <!--Filtres du Site-->
+            <div id="filtres">
+                <h2> <strong> Filtres </strong> </h2>
+                <div class="boutonfiltres">
+                    <span>
+                        <i class="fas fa-money-bill-wave"></i>
+                    </span>
+                    <h2><strong> Économique </strong></h2>
+                </div>
+                <div class="boutonfiltres">
+                    <!--Boutons du filtres-->
+                    <span>
+                        <i class="fas fa-child"></i>
+                    </span>
+                    <h2><strong> Familial </strong></h2>
+                </div>
+                <div class="boutonfiltres">
+                    <span>
+                        <i class="fas fa-heart"></i>
+                    </span>
+                    <h2><strong> Romantique </strong></h2>
+                </div>
+                <div class="boutonfiltres">
+                    <span>
+                        <i class="fas fa-dog"></i>
+                    </span>
+                    <h2><strong> Animaux autorisés </strong></h2>
+                </div>
             </div>
+            <div id="info">
+                <!--Icone Infos-->
+                <span>
+                    <i class="fas fa-info"></i>
+                </span>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+        </section>
     </section>
-    <section>
-        <!--Filtres du Site-->
-        <div id="filtres">
-            <h2> <strong> Filtres </strong> </h2>
-            <div class="boutonfiltres">
-                <span>
-                    <i class="fas fa-money-bill-wave"></i>
-                </span>
-                <h2><strong> Économique </strong></h2>
-            </div>
-            <div class="boutonfiltres">
-                <!--Boutons du filtres-->
-                <span>
-                    <i class="fas fa-child"></i>
-                </span>
-                <h2><strong> Familial </strong></h2>
-            </div>
-            <div class="boutonfiltres">
-                <span>
-                    <i class="fas fa-heart"></i>
-                </span>
-                <h2><strong> Romantique </strong></h2>
-            </div>
-            <div class="boutonfiltres">
-                <span>
-                    <i class="fas fa-dog"></i>
-                </span>
-                <h2><strong> Animaux autorisés </strong></h2>
-            </div>
-        </div>
-        <div id="info">
-            <!--Icone Infos-->
-            <span>
-                <i class="fas fa-info"></i>
-            </span>
-            <p>Plus de 500 logements sont disponibles dans cette ville</p>
-        </div>
-    </section>
-    <section id="heb">
+    <section class="heb">
         <!--Section Hebergement-->
         <section class="hebsection">
             <h2 id="Hebergements" class="titreheb"> Hébergements à Marseille </h2>
-            <div id="agencevignette">
+            <div class="agencevignette">
                 <!--Agencement des Vignettes-->
-                <div id="vignettesheb"> <img class="imgheb"
+                <div class="vignettesheb"> <img class="imgheb"
                         src="images/reservia/images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
                         alt="Auberge de la Cannebière" />
                     <!--Vignettes 1-->
@@ -104,7 +106,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesheb"> <img class="imgheb"
+                <div class="vignettesheb"> <img class="imgheb"
                         src="images/reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
                         alt="Hôtel du Port" />
                     <!--Vignettes 2-->
@@ -121,7 +123,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesheb"> <img class="imgheb"
+                <div class="vignettesheb"> <img class="imgheb"
                         src="images/reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
                         alt="Hôtel les mouettes" />
                     <!--Vignettes 3-->
@@ -142,7 +144,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesheb"> <img class="imgheb"
+                <div class="vignettesheb"> <img class="imgheb"
                         src="images/reservia/images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
                         alt="Hôtel de la mer" />
                     <!--Vignettes 4-->
@@ -163,7 +165,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesheb"> <img class="imgheb"
+                <div class="vignettesheb"> <img class="imgheb"
                         src="images//reservia/images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
                         alt="Auberge Le Panier" />
                     <!--Vignettes 5-->
@@ -184,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesheb"> <img class="imgheb"
+                <div class="vignettesheb"> <img class="imgheb"
                         src="images/reservia/images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
                         alt="Hôtel chez Amina" />
                     <!--Vignettes 6-->
@@ -212,8 +214,8 @@
             </div>
             <div id="agencevignetteaside">
                 <!--Agencement des Vignettes-->
-                <div id="vignettesaside"> <img class="imgaside"
-                        src="images/reservia/images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+                <div class="vignettesaside"> <img class="imgaside"
+                        src="images/reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                         alt="Le Soleil du Matin" />
                     <!--Vignettes 1-->
                     <div class="textaside">
@@ -231,8 +233,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesaside"> <img class="imgaside"
-                        src="images/reservia/images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg"
+                <div class="vignettesaside"> <img class="imgaside"
+                        src="images/reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
                         alt="Au coeur de l'eau" />
                     <!--Vignettes 2-->
                     <div class="textaside">
@@ -252,8 +254,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="vignettesaside"> <img class="imgaside"
-                        src="images/reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+                <div class="vignettesaside"> <img class="imgaside"
+                        src="images/reservia/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
                         alt="Tout Bleu et Blanc" />
                     <!--Vignettes 3-->
                     <div class="textaside">
@@ -280,9 +282,9 @@
     <section class="actsection">
         <section>
             <h2 id="Activites" class="titreact"> Activités à Marseille </h2>
-            <div id="actvignette">
+            <div class="actvignette">
                 <!--Agencement des Vignettes-->
-                <div id="vignettesactbig"> <img class="imgactbig"
+                <div class="vignettesactbig"> <img class="imgactbig"
                         src="images/reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
                         alt="Vieux Port" />
                     <!--Vignettes 1 big-->
@@ -290,28 +292,30 @@
                         <div><strong> Vieux Port</strong></div>
                     </div>
                 </div>
-                <div id="vignettesact"> <img class="imgact"
-                        src="images/reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                        alt="Hôtel du Port" />
-                    <!--Vignettes 2-->
-                    <div class="textact">
-                        <div><strong>Hôtel du Port</strong></div>
+                <div>
+                    <div class="vignettesact1"> <img class="imgact1"
+                            src="images/reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+                            alt="Fort de Pomègues" />
+                        <!--Vignettes 2-->
+                        <div class="textact">
+                            <div><strong>Fort de Pomègues</strong></div>
+                        </div>
                     </div>
-                </div>
-                <div id="vignettesact"> <img class="imgact"
-                        src="images/reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                        alt="Hôtel les mouettes" />
-                    <!--Vignettes 3-->
-                    <div class="textact">
-                        <div><strong>Hôtel les mouettes</strong></div>
+                    <div class="vignettesact2"> <img class="imgact2"
+                            src="images/reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+                            alt="îles du Frioul" />
+                        <!--Vignettes 3-->
+                        <div class="textact">
+                            <div><strong>îles du Frioul</strong></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section>
-            <div id="actvignetteright">
+            <div class="actvignetteright">
                 <!--Agencement des Vignettes-->
-                <div id="vignettesactbig"> <img class="imgactbig"
+                <div class="vignettesactbig"> <img class="imgactbig"
                         src="images/reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
                         alt="Parc National des Calanques" />
                     <!--Vignettes 1 big-->
@@ -319,48 +323,51 @@
                         <div><strong>Parc National des Calanques</strong></div>
                     </div>
                 </div>
-                <div id="vignettesact"> <img class="imgact"
-                        src="images/reservia/images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
-                        alt="Hôtel du Port" />
-                    <!--Vignettes 2-->
-                    <div class="textact">
-                        <div><strong>Hôtel du Port</strong></div>
+                <div>
+                    <div class="vignettesact3"> <img class="imgact3"
+                            src="images/reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+                            alt="Notre-Dame-de-la-Garde" />
+                        <!--Vignettes 3-->
+                        <div class="textact">
+                            <div><strong>Notre-Dame-de-la-Garde</strong></div>
+                        </div>
+                    </div>
+                    <div class="vignettesact4"> <img class="imgact4"
+                            src="images/reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+                            alt="Parc Longchamp" />
+                        <!--Vignettes 4-->
+                        <div class="textact">
+                            <div><strong>Parc Longchamp</strong></div>
+                        </div>
                     </div>
                 </div>
-                <div id="vignettesact"> <img class="imgact"
-                        src="images/reservia/images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg"
-                        alt="Hôtel les mouettes" />
-                    <!--Vignettes 3-->
-                    <div class="textheb">
-                        <div><strong>Hôtel les mouettes</strong></div>
-                    </div>
-                </div>
+            </div>
             </div>
         </section>
     </section>
     <footer>
         <!--Liste à puce du bas de page-->
         <div id="footerlist">
-            <div>
+            <div class="foot">
                 <ol>
                     <h2>A propos</h2>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
+                    <li>Fonctionnement du site</li> </br>
+                    <li>Conditions générales de vente</li> </br>
+                    <li>Données et confidentialité</li> </br>
+                </ol>
+            </div>
+            <div class="foot">
+                <ol>
+                    <h2>Nos hébergements</h2> </br>
+                    <li>Charte qualité</li> </br>
+                    <li>Soumettre votre hôtel</li> </br>
                 </ol>
             </div>
             <div>
                 <ol>
-                    <h2>Nos hébergements</h2>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ol>
-            </div>
-            <div>
-                <ol>
-                    <h2>Assistance</h2>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
+                    <h2>Assistance</h2> </br>
+                    <li>Centre d'aide</li> </br>
+                    <li>Nous contacter</li> </br>
             </div>
         </div>
     </footer>

@@ -6,7 +6,7 @@ header {
   flex-direction: row;
   align-content: flex-start;
   justify-content: space-between;
-  margin-left: 10%;
+  margin-left: 9.3%;
 }
 .title {
   display: flex;
@@ -51,6 +51,9 @@ h1 {
 }
 h2 {
   font-size: medium;
+}
+.section1 { /* reglagles section1*/
+  margin-left: 5%;
 }
 .searchbar {
   /* Groupe de la barre de recherche */
@@ -157,7 +160,7 @@ button {
   margin-top: 10px;
   margin-right: 15px;
 }
-#heb {
+.heb {
   /*Section Hebergement+Aside*/
   display: flex;
   flex-direction: row;
@@ -166,21 +169,19 @@ button {
 .hebsection {
   /* Hebergement*/
   background-color: #f2f2f2;
-  min-width: 30%;
-  max-height: 30%;
   border-radius: 20px;
   margin-right: 5%;
 }
-#agencevignette {
+.agencevignette {
   /* agencements vignettes hebergement*/
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-right: 2%;
-  padding-left: 2%;
-}
-#vignettesheb {
+  padding-right: 5%;
+  padding-left: 5%;
+  justify-content: space-evenly;
+  }
+.vignettesheb {
   /* reglagles vignettes hebergement*/
   background-color: #ffffff;
   display: flex;
@@ -202,12 +203,12 @@ button {
 }
 .titreheb {
   /*titre hebergement*/
-  padding-left: 35px;
-  padding-top: 2%;
+  padding-left: 12%;
+  padding-top: 1%;
 }
 .titreaff {
   /* titre afficher*/
-  padding-left: 35px;
+  padding-left: 12%;
 }
 .textheb {
   /* Text Vignettes Hebergements */
@@ -234,7 +235,7 @@ button {
   max-width: 30%;
   border-radius: 20px;
 }
-#agencevignetteaside {
+.agencevignetteaside {
   /* agencements vignettes aside*/
   display: flex;
   flex-direction: column;
@@ -242,7 +243,7 @@ button {
   padding-right: 40px;
   padding-bottom: 34px;
 }
-#vignettesaside {
+.vignettesaside {
   /* reglagles vignettes aside*/
   background-color: #ffffff;
   display: flex;
@@ -290,7 +291,7 @@ button {
   justify-content: space-between;
   padding-bottom: 5%;
 }
-#act {
+.act {
   /*Section Activités*/
   display: flex;
   flex-direction: row;
@@ -304,69 +305,118 @@ button {
   max-height: 30%;
   border-radius: 20px;
 }
-#actvignette {
+.actvignette {
   /* agencements vignettes activités*/
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  min-width: 40%;
+  max-width: 45%;
 }
-#actvignetteright {
+.actvignetteright {
   /* agencements vignettes activités droite*/
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-right: 2%;
-  padding-left: 2%;
-  padding-top: 8%;
+  padding-top: 12.5%;
 }
-#vignettesact {
-  /* reglagles vignettes hebergement*/
-  background-color: #070707e1;
+.vignettesact1 {
+  /* reglagles vignettes activités 1*/
+  background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 200px;
-  width: 246px;
+  height: 236px;
+  width: 304px;
   border-radius: 10px;
-  margin: 14px;
+  box-shadow: 0px 6px 2px #f2f2f2;
+  margin-bottom: 44px;
 }
-#vignettesactbig {
+.vignettesact2 {
+  /* reglagles vignettes activités 2*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 166px;
+  width: 304px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 2px #f2f2f2;
+}
+.vignettesact3 {
+  /* reglagles vignettes activités 2*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 196px;
+  width: 304px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 2px #f2f2f2;
+  margin-bottom: 40px;
+}
+.vignettesact4 {
+  /* reglagles vignettes activités 2*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 210px;
+  width: 304px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 2px #f2f2f2;
+}
+.vignettesactbig {
   /* reglagles vignettes activités Big*/
   background-color: #ffffff;
   height: 446px;
-  width: 308px;
+  width: 304x;
   border-radius: 10px;
-  margin: 14px;
-  box-shadow: 6px 6px 4px #f2f2f2;
+  box-shadow: 0px 6px 2px #f2f2f2;
+  margin-right: 46px;
 }
-.imgact {
-  /* Reglages images dans la vignettes */
-  padding-top: 4px;
-  padding-left: 5px;
+.imgact1 {
+  /* Reglages images dans la vignettes 1 */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 114px;
-  width: 236px;
+  height: 180px;
+  width: 304px;
+  object-fit: cover;
+  
+}
+.imgact2 {
+  /* Reglages images dans la vignettes 2 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 304px;
+  height: 108px;
+}
+.imgact3 {
+  /* Reglages images dans la vignettes 3 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 304px;
+  height: 140px;
+}
+.imgact4 {
+  /* Reglages images dans la vignettes 4 */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 304px;
+  height:152px;
 }
 .imgactbig {
   /* Reglages image dans la vignette BIG */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 390px;
-  width: 308px;
+  width: 304px;
+  object-fit: cover;
 }
 .titreact {
   /*titre activités*/
-  padding-left: 35px;
-  padding-top: 2%;
+  padding-top: 6%;
 }
 .textact {
   /* Texte Vignettes Activités */
   display: flex;
-  flex-direction: column;
   margin-left: 16px;
-  font-size: small;
+  font-size: medium;
 }
 .textactbig {
   /* Texte Vignettes Activités Big */
@@ -383,10 +433,14 @@ section {
 }
 footer {
   background-color: #f2f2f2;
+  margin-top: 4%;
 }
-
 #footerlist {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  padding-left: 7.6%;
+}
+.foot {  /* texte espacement footer*/
+  padding-right: 15%;
 }
