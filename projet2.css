@@ -4,14 +4,17 @@
 html {
   max-width: 1440px;
 }
+a:link {
+  text-decoration: none;
+}
 header {
   display: flex;
   flex-direction: row;
-  align-content: flex-start;
   justify-content: space-between;
 }
 .title {
   display: flex;
+  padding-top: 36px;
 }
 header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
   padding-left: 2%;
@@ -19,37 +22,40 @@ header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ 
 }
 #nav {
   display: flex;
-  margin-top: 20px;
+  padding-top: 42px;
 }
 .nav1  /* bouton Hebergement 1*/ {
   text-decoration: none;
   color: black;
   font-size: 16px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .nav1:hover    /* Mouseover du bouton 1*/ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 26px;
+  padding-top: 48px;
   color: #0065fc;
 }
 .nav2 /* bouton Activités 2*/ {
   text-decoration: none;
   color: black;
   font-size: 16px;
-  margin: 20px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .nav2:hover /* Mouseover du bouton 2 */ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 26px;
+  padding-top: 48px;
   color: #0065fc;
 }
-.nav3 {
-  /* Bouton s'inscrire */
+.nav3 /* Bouton s'inscrire */ {
   text-decoration: none;
   color: #0065fc;
   font-size: 16px;
-  margin-right: 50px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 h1 {
   font-size: x-large;
@@ -57,8 +63,7 @@ h1 {
 h2 {
   font-size: medium;
 }
-.searchbar {
-  /* Groupe de la barre de recherche */
+.searchbar   /* Groupe de la barre de recherche */ {
   display: flex;
   flex-direction: row;
   background: #f2f2f2;
@@ -69,16 +74,14 @@ h2 {
   border: 2px #8080801a solid;
   border-radius: 10px 10px 10px 10px;
 }
-.fa-map-marker-alt {
-  /* Icone "localisation" de la barre de recherche */
+.fa-map-marker-alt   /* Icone "localisation" de la barre de recherche */ {
   background-color: #8080801a;
   font-size: 1.3rem;
   padding: 15px;
   border: 2px #80808000 solid;
   border-radius: 8px 0px 0px 8px;
 }
-input {
-  /* Barre de recherche */
+input   /* Barre de recherche */ {
   background-color: #f2f2f2;
   padding: 16px 15px;
   display: block;
@@ -92,8 +95,7 @@ input {
 input:focus {
   outline: none;
 }
-button {
-  /* Bouton "rechercher" */
+button   /* Bouton "rechercher" */ {
   cursor: pointer;
   outline: none;
   border: none;
@@ -105,7 +107,7 @@ button {
   color: #f2f2f2;
   margin-bottom: 15px;
 }
-#filtres {
+#filtres /* partie filtres */ {
   display: flex;
   flex-wrap: wrap;
   margin-top: 3%;
@@ -114,8 +116,7 @@ button {
 .fa-money-bill-wave,
 .fa-heart,
 .fa-child,
-.fa-dog {
-  /* Icones Filtres */
+.fa-dog   /* Icones Filtres */ {
   font-size: 100%;
   border-radius: 25px 25px 25px 25px;
   color: #0065fc;
@@ -131,8 +132,7 @@ button {
   padding-left: 13px;
   padding-right: 13px;
 }
-.boutonfiltres {
-  /* bouton complet filtres */
+.boutonfiltres   /* bouton complet filtres */ {
   display: flex;
   border: 2px #f2f2f2 solid;
   border-radius: 25px 25px 25px 25px;
@@ -147,7 +147,7 @@ button {
 #info {
   display: flex;
   flex-direction: row;
-align-items: baseline;
+  align-items: baseline;
 }
 .fa-info {
   /* Icone Info */
@@ -161,28 +161,24 @@ align-items: baseline;
   padding: 1%;
   margin-right: 12px;
 }
-.heb {
-  /*Section Hebergement+Aside*/
+.heb   /*Section Hebergement+Aside*/ {
   display: flex;
   flex-direction: row;
   margin-top: 2%;
 }
-.hebsection {
-  /* Hebergement*/
+.hebsection   /* Hebergement*/ {
   background-color: #f2f2f2;
   border-radius: 20px;
   margin-right: 2%;
   max-width: 880px;
 }
-.agencevignette {
-  /* agencements vignettes hebergement*/
+.agencevignette   /* agencements vignettes hebergement*/ {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.vignettesheb {
-  /* reglagles vignettes hebergement*/
+.vignettesheb   /* reglagles vignettes hebergement*/ {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -192,8 +188,7 @@ align-items: baseline;
   border-radius: 10px;
   margin: 8px;
 }
-.imgheb {
-  /* Reglages images dans la vignettes */
+.imgheb   /* Reglages images dans la vignettes */ {
   padding-top: 4px;
   padding-left: 5px;
   border-top-left-radius: 10px;
@@ -201,24 +196,21 @@ align-items: baseline;
   height: 114px;
   width: 236px;
 }
-.titreheb {
-  /*titre hebergement*/
-  padding-left: 3%;
+.titreheb   /*titre hebergement*/ {
+  padding-left: 4%;
   padding-top: 1%;
 }
-.titreaff {
-  /* titre afficher*/
-  padding-left: 3%;
+.titreaff   /* titre afficher*/ {
+  padding-left: 4%;
 }
-.textheb {
-  /* Text Vignettes Hebergements */
+.textheb /* Text Vignettes Hebergements */ {
   display: flex;
   flex-direction: column;
   margin-left: 16px;
   font-size: small;
+  color: black;
 }
-.agencestar {
-  /*agencement etoile*/
+.agencestar   /*agencement etoile*/ {
   display: flex;
   flex-direction: row;
 }
@@ -229,20 +221,17 @@ align-items: baseline;
   margin-left: 3px;
   color: #f2f2f2;
 }
-.hebaside {
-  /*Aside*/
+.hebaside  /*Aside de l'hebergement*/{
   background-color: #f2f2f2;
   border-radius: 20px;
   padding-left: 40px;
   min-width: 420px;
 }
-.agencevignetteaside {
-  /* agencements vignettes aside*/
+.agencevignetteaside   /* agencements vignettes aside*/ {
   display: flex;
   flex-direction: column;
 }
-.vignettesaside {
-  /* reglagles vignettes aside*/
+.vignettesaside   /* reglages vignettes aside*/ {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -252,8 +241,7 @@ align-items: baseline;
   border-radius: 10px;
   margin: 14px;
 }
-.imgaside {
-  /* Reglages images dans la vignettes */
+.imgaside   /* reglages images dans la vignettes */ {
   padding-top: 5px;
   padding-left: 5px;
   border-top-left-radius: 10px;
@@ -261,26 +249,22 @@ align-items: baseline;
   height: 134px;
   width: 128px;
 }
-.agencetitreaside {
-  /*agencement titre et icone */
+.agencetitreaside   /*agencement titre et icone */ {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.titreaside {
-  /*titre aside*/
+.titreaside   /*titre aside*/ {
   padding-left: 5%;
   padding-top: 2%;
 }
-.fa-chart-line {
-  /* icone aside*/
+.fa-chart-line   /* icone aside*/ {
   font-size: 1.33em;
   vertical-align: -25%;
   padding-top: 4%;
   padding-right: 16%;
 }
-.textaside {
-  /* Text Vignettes Aside */
+.textaside   /* Textes Vignettes Aside */ {
   display: flex;
   flex-direction: column;
   margin-left: 16px;
@@ -288,25 +272,22 @@ align-items: baseline;
   padding-top: 5%;
   justify-content: space-between;
   padding-bottom: 5%;
+  color: black;
 }
-.act {
-  /*Section Activités*/
+.act   /*Section Activités*/ {
   display: flex;
   flex-direction: row;
 }
-.actsection {
-  /*activités*/
+.actsection   /*activités*/ {
   display: flex;
   flex-direction: row;
   border-radius: 20px;
 }
-.actvignette {
-  /* agencements vignettes activités*/
+.actvignette   /* agencements vignettes activités*/{
   display: flex;
   flex-direction: row;
 }
-.vignettesact1 {
-  /* reglagles vignettes activités 1*/
+.vignettesact1   /* reglagles vignettes activités 1*/ {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
@@ -317,8 +298,7 @@ align-items: baseline;
   box-shadow: 0px 6px 2px #f2f2f2;
   margin-bottom: 44px;
 }
-.vignettesact2 {
-  /* reglagles vignettes activités 2*/
+.vignettesact2   /* reglagles vignettes activités 2*/ {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -327,8 +307,7 @@ align-items: baseline;
   border-radius: 10px;
   box-shadow: 0px 6px 2px #f2f2f2;
 }
-.vignettesact3 {
-  /* reglagles vignettes activités 2*/
+.vignettesact3   /* reglagles vignettes activités 3*/{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -338,8 +317,7 @@ align-items: baseline;
   box-shadow: 0px 6px 2px #f2f2f2;
   margin-bottom: 40px;
 }
-.vignettesact4 {
-  /* reglagles vignettes activités 2*/
+.vignettesact4   /* reglagles vignettes activités 4*/{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -348,8 +326,7 @@ align-items: baseline;
   border-radius: 10px;
   box-shadow: 0px 6px 2px #f2f2f2;
 }
-.vignettesactbig {
-  /* reglagles vignettes activités Big*/
+.vignettesactbig   /* reglagles vignettes activités Big*/ {
   background-color: #ffffff;
   height: 446px;
   width: 304px;
@@ -357,64 +334,57 @@ align-items: baseline;
   box-shadow: 0px 6px 2px #f2f2f2;
   margin-right: 53px;
 }
-.actvignetteright {
-  /* agencements vignettes activités droite*/
+.actvignetteright   /* agencements vignettes activités droite*/ {
   display: flex;
   margin-left: 53px;
 }
-.imgact1 {
-  /* Reglages images dans la vignettes 1 */
+.imgact1   /* Reglages images dans la vignettes 1 */ {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 180px;
   width: 304px;
   object-fit: cover;
 }
-.imgact2 {
-  /* Reglages images dans la vignettes 2 */
+.imgact2   /* Reglages images dans la vignettes 2 */ {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 304px;
   height: 108px;
 }
-.imgact3 {
-  /* Reglages images dans la vignettes 3 */
+.imgact3   /* Reglages images dans la vignettes 3 */ {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 304px;
   height: 140px;
 }
-.imgact4 {
-  /* Reglages images dans la vignettes 4 */
+.imgact4   /* Reglages images dans la vignettes 4 */ {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   width: 304px;
   height: 152px;
 }
-.imgactbig {
-  /* Reglages image dans la vignette BIG */
+.imgactbig   /* Reglages image dans la vignette BIG */ {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 390px;
   width: 304px;
   object-fit: cover;
 }
-.titreact {
-  /*titre activités*/
+.titreact   /*titre activités*/ {
   padding-top: 6%;
   padding-bottom: 2%;
 }
-.textact {
-  /* Texte Vignettes Activités */
+.textact   /* texte vignettes activités */ {
   display: flex;
   margin-left: 16px;
   font-size: medium;
+  color: black;
 }
-.textactbig {
-  /* Texte Vignettes Activités Big */
+.textactbig   /* textes vignettes activités Big */ {
   font-size: medium;
   padding-left: 5%;
   padding-top: 4%;
+  color: black;
 }
 ol {
   list-style-type: none;
@@ -422,13 +392,13 @@ ol {
 footer {
   background-color: #f2f2f2;
   margin-top: 4%;
+  width: 1440px;
 }
-#footerlist {
+#footerlist  /* liste a puce footer*/ {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.foot {
-  /* texte espacement footer*/
+.foot   /* texte espacement footer*/ {
   padding-right: 15%;
 }
