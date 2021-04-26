@@ -11,23 +11,22 @@
     <!--Police-->
     <title>RESERVIA</title>
 </head>
-<header>
-    <div> <a class="title" href="projet2.html"><img src="images/logo/Reservia.svg" alt="Logo" /> </a> </div>
-    <!--Titre du site-->
-    <div id="nav">
-        <div> <a class="nav1" href="#Hebergements">Hébergements</a> </div>
-        <!--nav avec ancrage-->
-        <div> <a class="nav2" href="#Activites">Activités</a> </div>
-        <div> <a class="nav3" href=""> <strong>S'inscrire</strong></a> </div>
-    </div>
-</header>
 
 <body>
-    <section class="section1">
-        <section>
+    <header>
+        <div> <a class="title" href="projet2.html"><img src="images/logo/Reservia.svg" alt="Logo" /> </a> </div>
+        <!--Titre du site-->
+        <div id="nav">
+            <div> <a class="nav1" href="#Hebergements">Hébergements</a> </div>
+            <!--nav avec ancrage-->
+            <div> <a class="nav2" href="#Activites">Activités</a> </div>
+            <div> <a class="nav3" href=""> <strong>S'inscrire</strong></a> </div>
+        </div>
+    </header>
+    <section class="sectionvacances">
+        <div>
             <h1><strong> Votre hébergement pour des vacances de rêve </strong></h1>
             <p>En plein centre ville ou en pleine nature</p>
-            </div>
             <div class="searchbar">
                 <!-- Barre de recherche -->
                 <span class="fas fa-map-marker-alt fa-fw"></span> <!-- Icone de localisation -->
@@ -39,8 +38,9 @@
                     <!-- Bouton "rechercher" -->
                     <button>Rechercher</button>
                 </div>
-        </section>
-        <section>
+            </div>
+        </div>
+        <div>
             <!--Filtres du Site-->
             <div id="filtres">
                 <h2> <strong> Filtres </strong> </h2>
@@ -72,12 +72,10 @@
             </div>
             <div id="info">
                 <!--Icone Infos-->
-                <span>
-                    <i class="fas fa-info"></i>
-                </span>
+                <i class="fas fa-info"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-        </section>
+        </div>
     </section>
     <section class="heb">
         <!--Section Hebergement-->
@@ -238,7 +236,8 @@
                         alt="Au coeur de l'eau" />
                     <!--Vignettes 2-->
                     <div class="textaside">
-                        <div><strong>Au coeur de l'eau </strong> </br> <strong>Chambres d'hôtes</strong></div>
+                        <div><strong>Au coeur de l'eau </strong> </div> <br />
+                        <div><strong>Chambres d'hôtes</strong></div>
                         <p>Nuit à partir de 71<strong>€</strong></p>
                         <div class="agencestar">
                             <div class="star">
@@ -275,7 +274,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
             </div>
         </aside>
     </section>
@@ -341,6 +339,7 @@
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
     </section>
     <footer>
@@ -348,24 +347,25 @@
         <div id="footerlist">
             <div class="foot">
                 <ol>
-                    <h2>A propos</h2>
-                    <li>Fonctionnement du site</li> </br>
-                    <li>Conditions générales de vente</li> </br>
-                    <li>Données et confidentialité</li> </br>
+                    <li><strong>A propos</strong></li>
+                    <li>Fonctionnement du site</li>
+                    <li>Conditions générales de vente</li>
+                    <li>Données et confidentialité</li>
                 </ol>
             </div>
             <div class="foot">
                 <ol>
-                    <h2>Nos hébergements</h2> </br>
-                    <li>Charte qualité</li> </br>
-                    <li>Soumettre votre hôtel</li> </br>
+                    <li><strong>Nos hébergements</strong></li>
+                    <li>Charte qualité</li>
+                    <li>Soumettre votre hôtel</li>
                 </ol>
             </div>
-            <div>
+            <div class="foot">
                 <ol>
-                    <h2>Assistance</h2> </br>
-                    <li>Centre d'aide</li> </br>
-                    <li>Nous contacter</li> </br>
+                    <li> <strong>Assistance</strong></li>
+                    <li>Centre d'aide</li>
+                    <li>Nous contacter</li>
+                </ol>
             </div>
         </div>
     </footer>
