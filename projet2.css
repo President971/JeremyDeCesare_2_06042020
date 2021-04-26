@@ -132,7 +132,7 @@ button   /* Bouton "rechercher" */ {
   padding-left: 13px;
   padding-right: 13px;
 }
-.boutonfiltres   /* bouton complet filtres */ {
+.boutonfiltres   /* bouton complet filtres */{
   display: flex;
   border: 2px #f2f2f2 solid;
   border-radius: 25px 25px 25px 25px;
@@ -401,4 +401,7 @@ footer {
 }
 .foot   /* texte espacement footer*/ {
   padding-right: 15%;
+}
+li {
+  margin: 10px;
 }
