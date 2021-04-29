@@ -1,12 +1,14 @@
 * {
   font-family: "Raleway", sans-serif;
 }
+body {
+}
 a:link {
   text-decoration: none;
 }
 header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
-margin-right: 2em;
-margin-left: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
 }
 header {
   display: flex;
@@ -167,6 +169,7 @@ button   /* Bouton "rechercher" */ {
   border-radius: 20px;
   margin-right: 3%;
   box-sizing: border-box;
+  max-width: 885px;
 }
 .agencevignette /* agencements vignettes hebergement */ {
   display: flex;
@@ -193,11 +196,11 @@ button   /* Bouton "rechercher" */ {
   width: 236px;
 }
 .titreheb   /*titre hebergement*/ {
-  padding-left: 1.90em;
+  padding-left: 1.9em;
   padding-top: 1%;
 }
 .titreaff   /* titre afficher*/ {
-  padding-left: 1.90em;
+  padding-left: 1.9em;
   padding-bottom: 1%;
 }
 .textheb /* Text Vignettes Hebergements */ {
@@ -221,8 +224,8 @@ button   /* Bouton "rechercher" */ {
 .hebaside  /*Aside de l'hebergement*/ {
   background-color: #f2f2f2;
   border-radius: 20px;
-  padding-left: 40px;
-  min-width: 420px;
+  padding-left: 2em;
+  padding-right: 2em;
 }
 .agencevignetteaside   /* agencements vignettes aside*/ {
   display: flex;
@@ -270,9 +273,13 @@ button   /* Bouton "rechercher" */ {
   padding-bottom: 5%;
   color: black;
 }
-.actvignette /* agencements vignettes activités*/ {
-display: flex;
-justify-content: space-between;
+.actblocvignette /* agencements blocs vignettes activités*/ {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.actvignette /* agencements du bloc activités*/ {
+  display: flex;
 }
 .vignettesact1   /* reglagles vignettes activités 1*/ {
   background-color: #ffffff;
@@ -309,12 +316,16 @@ justify-content: space-between;
   border-radius: 10px;
   box-shadow: 0px 6px 2px #f2f2f2;
 }
-.vignettesactbig   /* reglagles vignettes activités Big*/ {
+.vignettesactbig,.vignettesactbigright   /* reglagles vignettes activités Big et Big right*/ {
   background-color: #ffffff;
   height: 446px;
   width: 304px;
   border-radius: 10px;
   box-shadow: 0px 6px 2px #f2f2f2;
+  margin-right: 3em;
+}
+.vignettesactbigright {
+  margin-left: 3em;
 }
 .imgact1   /* Reglages images dans la vignettes 1 */ {
   border-top-left-radius: 10px;
@@ -385,4 +396,20 @@ footer {
 li {
   margin: 1em;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px)
+@media screen and (max-width: 1024px) {
+  .fa-money-bill-wave,
+.fa-heart,
+.fa-child,
+.fa-dog   /* Icones Filtres */ {
+padding: 0.93em;
+margin-right: 0.5em;
+}
+.agencevignette /* agencements vignettes hebergement */ {
+  justify-content: flex-start;
+}
+.vignettesactbigright {
+    margin-left: 0em;   
+}
+.actvignette {
+  margin-bottom: 3em;
+}
