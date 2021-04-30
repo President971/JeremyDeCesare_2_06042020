@@ -1,10 +1,11 @@
 * {
   font-family: "Raleway", sans-serif;
 }
-body {
-}
 a:link {
   text-decoration: none;
+}
+body {
+  max-width: 1440px;
 }
 header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
   margin-right: 2em;
@@ -60,6 +61,9 @@ h1 {
 }
 h2 {
   font-size: medium;
+}
+h3 {
+  display: none;
 }
 .searchbar   /* Groupe de la barre de recherche */ {
   display: flex;
@@ -194,13 +198,14 @@ button   /* Bouton "rechercher" */ {
   border-top-right-radius: 10px;
   height: 114px;
   width: 236px;
+  object-fit: cover;
 }
 .titreheb   /*titre hebergement*/ {
-  padding-left: 1.9em;
+  padding-left: 2.1em;
   padding-top: 1%;
 }
 .titreaff   /* titre afficher*/ {
-  padding-left: 1.9em;
+  padding-left: 2.1em;
   padding-bottom: 1%;
 }
 .textheb /* Text Vignettes Hebergements */ {
@@ -247,6 +252,7 @@ button   /* Bouton "rechercher" */ {
   border-bottom-left-radius: 10px;
   height: 134px;
   width: 128px;
+  object-fit: cover;
 }
 .agencetitreaside   /*agencement titre et icone */ {
   display: flex;
@@ -259,9 +265,9 @@ button   /* Bouton "rechercher" */ {
 }
 .fa-chart-line   /* icone aside*/ {
   font-size: 1.33em;
-  vertical-align: -25%;
-  padding-top: 4%;
-  padding-right: 16%;
+  vertical-align: -50%;
+  padding-top: 6%;
+  padding-right: 6%;
 }
 .textaside   /* Textes Vignettes Aside */ {
   display: flex;
