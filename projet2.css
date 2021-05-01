@@ -11,18 +11,11 @@ header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ 
   margin-right: 2em;
   margin-left: 2em;
 }
-header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
+.nav {
   padding-top: 1em;
-}
-#nav {
-  display: flex;
+  display: grid;
   align-items: center;
-  flex-wrap: wrap-reverse;
+  grid-template-columns: 1fr 11.3em 9em 4.5em;
 }
 .nav1  /* bouton Hebergement 1*/ {
   text-decoration: none;
@@ -34,7 +27,7 @@ header {
 .nav1:hover    /* Mouseover du bouton 1*/ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 2.312em;
+  padding-top: 1.8em;
   color: #0065fc;
 }
 .nav2 /* bouton Activités 2*/ {
@@ -47,14 +40,13 @@ header {
 .nav2:hover /* Mouseover du bouton 2 */ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 2.312em;
+  padding-top: 1.8em;
   color: #0065fc;
 }
 .nav3 /* Bouton s'inscrire */ {
   text-decoration: none;
   color: #0065fc;
   font-size: 16px;
-  padding-left: 2.188em;
 }
 h1 {
   font-size: x-large;
@@ -171,7 +163,7 @@ button   /* Bouton "rechercher" */ {
 .hebsection   /* Hebergement*/ {
   background-color: #f2f2f2;
   border-radius: 20px;
-  margin-right: 3%;
+  margin-right: 5%;
   box-sizing: border-box;
   max-width: 885px;
 }
@@ -192,8 +184,9 @@ button   /* Bouton "rechercher" */ {
   margin: 0.75em;
 }
 .imgheb   /* Reglages images dans la vignettes */ {
-  padding-top: 4px;
+  padding-top: 5px;
   padding-left: 5px;
+  padding-right: 5px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   height: 114px;
@@ -212,7 +205,7 @@ button   /* Bouton "rechercher" */ {
   display: flex;
   flex-direction: column;
   margin-left: 16px;
-  font-size: small;
+  font-size: 0.9em;
   color: black;
 }
 .agencestar   /*agencement etoile*/ {
@@ -402,20 +395,110 @@ footer {
 li {
   margin: 1em;
 }
-@media screen and (max-width: 1024px) {
-  .fa-money-bill-wave,
-.fa-heart,
-.fa-child,
-.fa-dog   /* Icones Filtres */ {
-padding: 0.93em;
-margin-right: 0.5em;
+@media screen and (min-width: 720px) and (max-width: 1439px) {
+  .agencevignette /* agencements vignettes hebergement */ {
+    justify-content: flex-start;
+  }
+  .titreheb,
+  .titreaff {
+    padding-left: 1em;
+  }
+  .actvignette {
+    margin-bottom: 3em;
+    justify-content: flex-start;
+  }
+  .actvignette {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vignettesactbigright {
+    margin-left: 0em;
+  }
+  .boutonfiltres   /* bouton complet filtres */ {
+    margin-top: 1em;
+  }
+  .filtres {
+    margin-top: 1em;
+  }
+  .hebaside  /*Aside de l'hebergement*/ {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .foot   /* texte espacement footer*/ {
+    padding-right: 0;
+  }
+  body {
+    margin: auto;
+  }
 }
-.agencevignette /* agencements vignettes hebergement */ {
-  justify-content: flex-start;
+@media screen and (max-width: 719px) {
+  .nav {
+    display:inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .nav1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .nav2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .nav3 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .vignettesact1,.vignettesact2,.vignettesact3,.vignettesact4,   /* reglagles des vignettes*/ {
+    height: 11.875em;
+    width: 20.937em;
+  }
+  .imgact1,.imgact2,.imgact3,.imgact4,    /* Reglages des images */ {
+    height: 8.375em;
+    width: 20.937em;
+  }
+  .imgheb,
+  .vignettesheb {
+    width: 20.937em;
+  }
+  .vignettesheb {
+    box-shadow: 4px 4px 6px #f2f2f2, -4px -4px 6px #f2f2f2;
+  }
+  .actvignette {
+    margin-bottom: 3em;
+    justify-content: flex-start;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vignettesactbig,.vignettesactbigright   /* reglagles vignettes activités Big et Big right*/ {
+    display: none;
+  }
+  .boutonfiltres   /* bouton complet filtres */ {
+    margin-top: 1em;
+  }
+
+  .filtres {
+    margin-top: 1em;
+  }
+  .heb {
+    flex-direction: column;
+  }
+  .hebsection {
+    order: 2;
+    background: none;
+  }
+  .hebaside  /*Aside de l'hebergement*/ {
+    order: 1;
+  }
+  .foot   /* texte espacement footer*/ {
+    padding-right: 0;
+  }
+  body {
+    width: 100%;
+  }
 }
-.vignettesactbigright {
-    margin-left: 0em;   
-}
-.actvignette {
-  margin-bottom: 3em;
+@media screen and (min-width: 1440px) {
+  body {
+    margin: auto;
+  }
 }
