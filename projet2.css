@@ -28,7 +28,7 @@ header,.sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
 .nav1:hover    /* Mouseover du bouton 1*/ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 2.3em;
+  padding-top: 1.8em;
   color: #0065fc;
 }
 .nav2 /* bouton Activités 2*/ {
@@ -41,7 +41,7 @@ header,.sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
 .nav2:hover /* Mouseover du bouton 2 */ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 2.3em;
+  padding-top: 1.8em;
   color: #0065fc;
 }
 .nav3 /* Bouton s'inscrire */ {
@@ -217,11 +217,17 @@ button   /* Bouton "rechercher" */ {
   padding-bottom: 1%;
 }
 .textheb /* Text Vignettes Hebergements */ {
-  display: flex;
-  flex-direction: column;
   margin-left: 1em;
-  font-size: 0.9em;
+  font-size: 0.95em;
   color: black;
+}
+.nuit {
+  padding-top: 0.25em;
+  padding-bottom: 0.5em;
+}
+.nuitaside{
+  padding-top: 1em;
+  padding-bottom: 1.6em;
 }
 .agencestar   /*agencement etoile*/ {
   display: flex;
@@ -281,10 +287,9 @@ button   /* Bouton "rechercher" */ {
   display: flex;
   flex-direction: column;
   margin-left: 1em;
-  font-size: small;
-  padding-top: 5%;
-  justify-content: space-between;
-  padding-bottom: 5%;
+  padding-top: 1em;
+  margin-right: 1em;
+  font-size: 1em;
   color: black;
 }
 .actblocvignette /* agencements blocs vignettes activités*/ {
@@ -353,7 +358,7 @@ button   /* Bouton "rechercher" */ {
   border-top-right-radius: 1em;
   width: 19em;
   height: 6.75em;
-  object-fit: none ;
+  object-fit: fill;
 }
 .imgact3   /* Reglages images dans la vignettes 3 */ {
   border-top-left-radius: 1em;
@@ -374,7 +379,7 @@ button   /* Bouton "rechercher" */ {
   border-top-right-radius: 1em;
   height: 24.375em;
   width: 19em;
-  object-fit: none;
+  object-fit: cover;
 }
 .titreact   /*titre activités*/ {
   padding-top: 4.27em;
@@ -447,13 +452,16 @@ li {
     padding-right: 0;
   }
   .foot   /* texte espacement footer*/ {
-    padding-right: 0;
+    padding-right: 4em;
   }
   body {
     margin: auto;
   }
 }
 @media screen and (max-width: 719px) {
+  .body {
+    margin: auto;
+  }
   header,.sectionvacances {
     padding-left: 1em;
   }
@@ -551,8 +559,10 @@ li {
     order: 1;
     padding-left: 0;
     padding-right: 0;
-    min-width: 371px;
+    min-width: 374px;
     border-radius: 0;
+    max-width: 380px;
+    margin: auto;
   }
   .titreheb, .titreaff,.titreact, .titreaside   {
     padding-left: 1em;
