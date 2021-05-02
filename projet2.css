@@ -6,8 +6,9 @@ a:link {
 }
 body {
   max-width: 1440px;
+  margin: auto;
 }
-header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
+header,.sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ {
   margin-right: 2em;
   margin-left: 2em;
 }
@@ -27,7 +28,7 @@ header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ 
 .nav1:hover    /* Mouseover du bouton 1*/ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 1.8em;
+  padding-top: 2.3em;
   color: #0065fc;
 }
 .nav2 /* bouton Activités 2*/ {
@@ -40,7 +41,7 @@ header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ 
 .nav2:hover /* Mouseover du bouton 2 */ {
   border-top-style: solid;
   border-width: 2px;
-  padding-top: 1.8em;
+  padding-top: 2.3em;
   color: #0065fc;
 }
 .nav3 /* Bouton s'inscrire */ {
@@ -57,12 +58,12 @@ h2 {
 h3 {
   display: none;
 }
-.loupe {
+.loupe { /* bouton loupe barre de recherche mobile */
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
-.bar {
+.bar { /* barre de recherche */
   display: flex;
 }
 .searchbar   /* Groupe de la barre de recherche */ {
@@ -158,7 +159,7 @@ button   /* Bouton "rechercher" */ {
   align-items: baseline;
   margin-top: 3%;
 }
-.fa-info {
+.fa-info {   /* Icone Info */
   /* Icone Info */
   display: flex;
   justify-content: center;
@@ -194,15 +195,15 @@ button   /* Bouton "rechercher" */ {
   flex-direction: row;
   height: 12.5em;
   width: 15.375em;
-  border-radius: 10px;
+  border-radius: 1em;
   margin: 0.75em;
 }
 .imgheb   /* Reglages images dans la vignettes */ {
   padding-top: 0.312em;
   padding-left: 0.312em;
   padding-right: 0.312em;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
   height: 7.125em;
   width: 14.75em;
   object-fit: cover;
@@ -249,14 +250,14 @@ button   /* Bouton "rechercher" */ {
   display: flex;
   height: 9em;
   width: 21.43em;
-  border-radius: 10px;
+  border-radius: 1em;
   margin: 0.875em;
 }
 .imgaside   /* reglages images dans la vignettes */ {
   padding-top: 0.312em;
   padding-left: 0.312em;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 1em;
+  border-bottom-left-radius: 1em;
   height: 8.375em;
   width: 8em;
   object-fit: cover;
@@ -315,7 +316,7 @@ button   /* Bouton "rechercher" */ {
 .vignettesact3   /* reglagles vignettes activités 3*/ {
   display: flex;
   flex-wrap: wrap;
-  height: 10.375em;
+  height: 12.25em;
   width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
@@ -335,7 +336,7 @@ button   /* Bouton "rechercher" */ {
   width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
-  margin-right: 3em;
+  margin-right: 3.4em;
 }
 .vignettesactbigright {
   margin-left: 3em;
@@ -352,28 +353,28 @@ button   /* Bouton "rechercher" */ {
   border-top-right-radius: 1em;
   width: 19em;
   height: 6.75em;
-  object-fit: cover;
+  object-fit: none ;
 }
 .imgact3   /* Reglages images dans la vignettes 3 */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   width: 19em;
   height: 8.75em;
-  object-fit: cover;
+  object-fit: fill;
 }
 .imgact4   /* Reglages images dans la vignettes 4 */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   width: 19em;
   height: 9.5em;
-  object-fit: cover;
+  object-fit: fill;
 }
 .imgactbig   /* Reglages image des vignettes BIG */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
   height: 24.375em;
   width: 19em;
-  object-fit: cover;
+  object-fit: none;
 }
 .titreact   /*titre activités*/ {
   padding-top: 4.27em;
@@ -396,7 +397,7 @@ ol {
 }
 footer {
   background-color: #f2f2f2;
-  margin-top: 5em;
+  margin-top: 4em;
 }
 #footerlist  /* liste a puce footer*/ {
   display: flex;
@@ -453,6 +454,9 @@ li {
   }
 }
 @media screen and (max-width: 719px) {
+  header,.sectionvacances {
+    padding-left: 1em;
+  }
   .rechercher {
     position: absolute;
     top: -9999px;
@@ -475,7 +479,7 @@ li {
     border-radius: 15px 15px 15px 15px;
     height: auto;
     color: #ffffff;
-    height: 3.4em;
+    height: 3.35em;
   }
   header,.sectionvacances,.actsection,.heb /*reglages de toutes les sections*/ {
     margin-right: 0;
@@ -510,29 +514,30 @@ li {
     margin-left: 0;
     margin-right: 0.5em;
   }
-  .vignettesact1,.vignettesact2,.vignettesact3,.vignettesact4,   /* reglagles des vignettes*/ {
+  .fa-info {  
+    display: none;
+  }
+  .vignettesact1, .vignettesact2, .vignettesact3, .vignettesact4,.vignettesactbigright, .vignettesactbig  /* reglagles des vignettes*/ {
     height: 11.875em;
-    width: 20.937em;
   }
-  .imgact1,.imgact2,.imgact3,.imgact4,    /* Reglages des images */ {
+  .imgact1,.imgact2,.imgact3,.imgact4,.imgactbig    /* Reglages des images */ {
     height: 8.375em;
-    width: 20.937em;
   }
-  .imgheb,
-  .vignettesheb {
-    width: 20.937em;
+  .imgheb,.vignettesheb,.vignettesact1,.vignettesact2,.vignettesact3,.vignettesact4,.imgact1,.imgact2,.imgact3,.imgact4,.vignettesactbig,.imgactbig ,.vignettesactbigright {
+    width: 21.43em;
   }
-  .vignettesheb {
+  .vignettesheb,.vignettesact1,.vignettesact2,.vignettesact3,.vignettesact4, .vignettesactbig, .vignettesactbigright {
     box-shadow: 4px 4px 6px #f2f2f2, -4px -4px 6px #f2f2f2;
+    margin-left: 1em;
   }
-  .actvignette {
-    margin-bottom: 3em;
+  .actvignette,.vignettesact1,.vignettesact2,.vignettesact3,.vignettesact4,.vignettesactbig,.vignettesactbigright {
+    margin-bottom: 2em;
     justify-content: flex-start;
     margin-left: auto;
     margin-right: auto;
   }
-  .vignettesactbig,.vignettesactbigright   /* reglagles vignettes activités Big et Big right*/ {
-    display: none;
+  .actvignette {
+    flex-direction: column;
   }
   .heb {
     flex-direction: column;
@@ -549,13 +554,22 @@ li {
     min-width: 371px;
     border-radius: 0;
   }
-  .titreaside {
-    padding-left: 0.5em;
+  .titreheb, .titreaff,.titreact, .titreaside   {
+    padding-left: 1em;
+  }
+  .titreact {
+  padding-top: 0;  
   }
   .foot   /* texte espacement footer*/ {
     padding-right: 0;
   }
+footer {
+  margin-top: 0em;
 }
+ ol {
+   padding-left: 0.5em;
+   padding-right: 1em;
+ }
 @media screen and (min-width: 1440px) {
   body {
     margin: auto;
