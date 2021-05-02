@@ -33,7 +33,7 @@ header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ 
 .nav2 /* bouton Activités 2*/ {
   text-decoration: none;
   color: black;
-  font-size: 16px;
+  font-size: 1em;
   padding-left: 2.188em;
   padding-right: 2.188em;
 }
@@ -46,7 +46,7 @@ header, .sectionvacances, .heb, .actsection /*reglages de toutes les sections*/ 
 .nav3 /* Bouton s'inscrire */ {
   text-decoration: none;
   color: #0065fc;
-  font-size: 16px;
+  font-size: 1em;
 }
 h1 {
   font-size: x-large;
@@ -57,16 +57,26 @@ h2 {
 h3 {
   display: none;
 }
+.loupe {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+.bar {
+  display: flex;
+}
 .searchbar   /* Groupe de la barre de recherche */ {
   display: flex;
   flex-direction: row;
   background: #f2f2f2;
   overflow: hidden;
-  width: 380px;
-  height: 50px;
-  margin-top: 30px;
+  width: 18em;
+  height: 3.125em;
+  margin-top: 1.875em;
   border: 2px #8080801a solid;
-  border-radius: 10px 10px 10px 10px;
+  border-right: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 .fa-map-marker-alt   /* Icone "localisation" de la barre de recherche */ {
   background-color: #8080801a;
@@ -76,14 +86,14 @@ h3 {
   border-radius: 8px 0px 0px 8px;
 }
 input   /* Barre de recherche */ {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 16px 15px;
   display: block;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1em;
   color: black;
   transition: all 240ms ease-out;
-  width: 85%;
+  width: 100%;
   border: none;
 }
 input:focus {
@@ -94,15 +104,19 @@ button   /* Bouton "rechercher" */ {
   outline: none;
   border: none;
   background-color: #0065fc;
-  padding: 16px 32px;
+  padding: 1em 2em;
   border-radius: 0px 8px 8px 0px;
   font-size: 1rem;
   font-weight: bolder;
   color: #f2f2f2;
-  margin-bottom: 15px;
+  margin-top: 1.875em;
 }
-#filtres /* partie filtres */ {
+.agencementfiltres {
   display: flex;
+}
+.filtre /* partie filtres */ {
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   margin-top: 3%;
 }
@@ -127,7 +141,8 @@ button   /* Bouton "rechercher" */ {
 }
 .boutonfiltres   /* bouton complet filtres */ {
   display: flex;
-  border: 2px #f2f2f2 solid;
+  flex-direction: row;
+  border: 3px #f2f2f2 solid;
   border-radius: 25px 25px 25px 25px;
   border-left: none;
   margin-left: 2.125em;
@@ -153,7 +168,7 @@ button   /* Bouton "rechercher" */ {
   color: #0065fc;
   border: 2px #f2f2f2 solid;
   padding: 1%;
-  margin-right: 12px;
+  margin-right: 0.75em;
 }
 .heb   /*Section Hebergement+Aside*/ {
   display: flex;
@@ -165,7 +180,6 @@ button   /* Bouton "rechercher" */ {
   border-radius: 20px;
   margin-right: 5%;
   box-sizing: border-box;
-  max-width: 885px;
 }
 .agencevignette /* agencements vignettes hebergement */ {
   display: flex;
@@ -178,19 +192,19 @@ button   /* Bouton "rechercher" */ {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 200px;
-  width: 246px;
+  height: 12.5em;
+  width: 15.375em;
   border-radius: 10px;
   margin: 0.75em;
 }
 .imgheb   /* Reglages images dans la vignettes */ {
-  padding-top: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-top: 0.312em;
+  padding-left: 0.312em;
+  padding-right: 0.312em;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  height: 114px;
-  width: 236px;
+  height: 7.125em;
+  width: 14.75em;
   object-fit: cover;
 }
 .titreheb   /*titre hebergement*/ {
@@ -204,7 +218,7 @@ button   /* Bouton "rechercher" */ {
 .textheb /* Text Vignettes Hebergements */ {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
+  margin-left: 1em;
   font-size: 0.9em;
   color: black;
 }
@@ -216,7 +230,7 @@ button   /* Bouton "rechercher" */ {
   color: #0065fc;
 }
 .stargris {
-  margin-left: 3px;
+  margin-left: 0.187em;
   color: #f2f2f2;
 }
 .hebaside  /*Aside de l'hebergement*/ {
@@ -233,18 +247,18 @@ button   /* Bouton "rechercher" */ {
 .vignettesaside   /* reglages vignettes aside*/ {
   background-color: #ffffff;
   display: flex;
-  height: 144px;
-  width: 343px;
+  height: 9em;
+  width: 21.43em;
   border-radius: 10px;
-  margin: 14px;
+  margin: 0.875em;
 }
 .imgaside   /* reglages images dans la vignettes */ {
-  padding-top: 5px;
-  padding-left: 5px;
+  padding-top: 0.312em;
+  padding-left: 0.312em;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  height: 134px;
-  width: 128px;
+  height: 8.375em;
+  width: 8em;
   object-fit: cover;
 }
 .agencetitreaside   /*agencement titre et icone */ {
@@ -265,7 +279,7 @@ button   /* Bouton "rechercher" */ {
 .textaside   /* Textes Vignettes Aside */ {
   display: flex;
   flex-direction: column;
-  margin-left: 16px;
+  margin-left: 1em;
   font-size: small;
   padding-top: 5%;
   justify-content: space-between;
@@ -284,8 +298,8 @@ button   /* Bouton "rechercher" */ {
   background-color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  height: 236px;
-  width: 304px;
+  height: 14.75em;
+  width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
   margin-bottom: 44px;
@@ -293,16 +307,16 @@ button   /* Bouton "rechercher" */ {
 .vignettesact2   /* reglagles vignettes activités 2*/ {
   display: flex;
   flex-wrap: wrap;
-  height: 166px;
-  width: 304px;
+  height: 10.375em;
+  width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
 }
 .vignettesact3   /* reglagles vignettes activités 3*/ {
   display: flex;
   flex-wrap: wrap;
-  height: 196px;
-  width: 304px;
+  height: 10.375em;
+  width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
   margin-bottom: 40px;
@@ -310,15 +324,15 @@ button   /* Bouton "rechercher" */ {
 .vignettesact4   /* reglagles vignettes activités 4*/ {
   display: flex;
   flex-wrap: wrap;
-  height: 210px;
-  width: 304px;
+  height: 13.125em;
+  width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
 }
 .vignettesactbig,.vignettesactbigright   /* reglagles vignettes activités Big et Big right*/ {
   background-color: #ffffff;
-  height: 446px;
-  width: 304px;
+  height: 27.875em;
+  width: 19em;
   border-radius: 1em;
   box-shadow: 0px 6px 2px #f2f2f2;
   margin-right: 3em;
@@ -329,36 +343,36 @@ button   /* Bouton "rechercher" */ {
 .imgact1   /* Reglages images dans la vignettes 1 */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  height: 180px;
-  width: 304px;
+  height: 11.25em;
+  width: 19em;
   object-fit: cover;
 }
 .imgact2   /* Reglages images dans la vignettes 2 */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  width: 304px;
-  height: 108px;
+  width: 19em;
+  height: 6.75em;
   object-fit: cover;
 }
 .imgact3   /* Reglages images dans la vignettes 3 */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  width: 304px;
-  height: 140px;
+  width: 19em;
+  height: 8.75em;
   object-fit: cover;
 }
 .imgact4   /* Reglages images dans la vignettes 4 */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  width: 304px;
-  height: 152px;
+  width: 19em;
+  height: 9.5em;
   object-fit: cover;
 }
 .imgactbig   /* Reglages image des vignettes BIG */ {
   border-top-left-radius: 1em;
   border-top-right-radius: 1em;
-  height: 390px;
-  width: 304px;
+  height: 24.375em;
+  width: 19em;
   object-fit: cover;
 }
 .titreact   /*titre activités*/ {
@@ -399,6 +413,19 @@ li {
   .agencevignette /* agencements vignettes hebergement */ {
     justify-content: flex-start;
   }
+  .agencementfiltres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filtre {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .boutonfiltres {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 1em;
+  }
   .titreheb,
   .titreaff {
     padding-left: 1em;
@@ -414,12 +441,6 @@ li {
   .vignettesactbigright {
     margin-left: 0em;
   }
-  .boutonfiltres   /* bouton complet filtres */ {
-    margin-top: 1em;
-  }
-  .filtres {
-    margin-top: 1em;
-  }
   .hebaside  /*Aside de l'hebergement*/ {
     padding-left: 0;
     padding-right: 0;
@@ -432,22 +453,62 @@ li {
   }
 }
 @media screen and (max-width: 719px) {
+  .rechercher {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  .loupe {
+    position: initial;
+  }
+  .searchbar   /* Groupe de la barre de recherche */ {
+    width: 19em;
+    border-right: 0px;
+  }
+  input   /* Barre de recherche */ {
+    width: 100%;
+  }
+  button   /* Bouton "rechercher" */ {
+    position: relative;
+    right: 10px;
+    padding: 1em 1.3em;
+    border-radius: 15px 15px 15px 15px;
+    height: auto;
+    color: #ffffff;
+    height: 3.4em;
+  }
+  header,.sectionvacances,.actsection,.heb /*reglages de toutes les sections*/ {
+    margin-right: 0;
+    margin-left: 0;
+  }
   .nav {
-    display:inline-grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 1fr);
   }
-  .nav1 {
+  .nav1r {
     grid-column: 1/2;
     grid-row: 2/3;
   }
-  .nav2 {
+  .nav2r {
     grid-column: 2/3;
     grid-row: 2/3;
   }
-  .nav3 {
+  .nav3r {
     grid-column: 2/3;
     grid-row: 1/2;
+  }
+  .agencementfiltres {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .filtre {
+    flex-direction: column;
+  }
+  .boutonfiltres {
+    margin-top: 1em;
+    margin-left: 0;
+    margin-right: 0.5em;
   }
   .vignettesact1,.vignettesact2,.vignettesact3,.vignettesact4,   /* reglagles des vignettes*/ {
     height: 11.875em;
@@ -473,15 +534,9 @@ li {
   .vignettesactbig,.vignettesactbigright   /* reglagles vignettes activités Big et Big right*/ {
     display: none;
   }
-  .boutonfiltres   /* bouton complet filtres */ {
-    margin-top: 1em;
-  }
-
-  .filtres {
-    margin-top: 1em;
-  }
   .heb {
     flex-direction: column;
+    margin: 0;
   }
   .hebsection {
     order: 2;
@@ -489,12 +544,16 @@ li {
   }
   .hebaside  /*Aside de l'hebergement*/ {
     order: 1;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 371px;
+    border-radius: 0;
+  }
+  .titreaside {
+    padding-left: 0.5em;
   }
   .foot   /* texte espacement footer*/ {
     padding-right: 0;
-  }
-  body {
-    width: 100%;
   }
 }
 @media screen and (min-width: 1440px) {
