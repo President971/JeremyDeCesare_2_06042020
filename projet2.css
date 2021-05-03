@@ -157,24 +157,22 @@ button   /* Bouton "rechercher" */ {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 .fa-info {   /* Icone Info */
   /* Icone Info */
   display: flex;
-  justify-content: center;
-  align-items: baseline;
   font-size: 80%;
   border-radius: 100%;
   color: #0065fc;
   border: 2px #f2f2f2 solid;
-  padding: 1%;
+  padding: 1em;
   margin-right: 0.75em;
 }
 .heb   /*Section Hebergement+Aside*/ {
   display: flex;
   flex-direction: row;
-  margin-top: 3%;
+  margin-top: 2%;
 }
 .hebsection   /* Hebergement*/ {
   background-color: #f2f2f2;
@@ -462,9 +460,9 @@ li {
   .body {
     margin: auto;
   }
-  header,.sectionvacances {
-    padding-left: 1em;
-  }
+.title,.sectionvacances {
+  padding-left: 1em;
+}
   .rechercher {
     position: absolute;
     top: -9999px;
@@ -489,24 +487,47 @@ li {
     color: #ffffff;
     height: 3.35em;
   }
-  header,.sectionvacances,.actsection,.heb /*reglages de toutes les sections*/ {
+  header,.sectionvacances,.actsection,.heb,.nav /*reglages de toutes les sections*/ {
     margin-right: 0;
     margin-left: 0;
+  }
+  .nav1:hover,.nav2:hover   /* Mouseover */ {
+    border-top: hidden;
+    border-bottom-style: solid;
+    border-color: #0065fc;
+    border-width: 3px;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
   }
   .nav {
     display: grid;
     grid-template-columns: repeat(2, 50%);
     grid-template-rows: repeat(2, 1fr);
   }
+  .nav1,.nav2 {
+    border-bottom-style: solid;
+    border-color:#f2f2f2 ;
+    border-width: 3px;
+    width: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-left: 3.2em;
+  }
   .nav1r {
     grid-column: 1/2;
     grid-row: 2/3;
+    display: flex;
   }
   .nav2r {
     grid-column: 2/3;
     grid-row: 2/3;
+    display: flex;
   }
   .nav3r {
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 1em;
     grid-column: 2/3;
     grid-row: 1/2;
   }
@@ -521,9 +542,6 @@ li {
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0.5em;
-  }
-  .fa-info {  
-    display: none;
   }
   .vignettesact1, .vignettesact2, .vignettesact3, .vignettesact4,.vignettesactbigright, .vignettesactbig  /* reglagles des vignettes*/ {
     height: 11.875em;
